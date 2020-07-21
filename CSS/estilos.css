@@ -1,0 +1,586 @@
+:root {
+    --font-fjalla: 'Fjalla One', sans-serif;
+    --font-sansPro: 'Source Sans Pro', sans-serif;
+    --gris-oscuro: #1d252c;
+    --gris-claro: #626262;
+    --bcg-gris: #1b2127;
+    --celeste: #026fff;
+    --celeste-suave: #f4fbff;
+    --gris-blanco: #fafafa;
+    --dorado: #fce69a;
+    --dorado-suave: #f8eab8;
+}
+
+body {
+    font-family: var(--font-sansPro), sans-serif;
+    margin: 0;
+    background-color: var(--dorado-suave);
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-fjalla), sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: #FFF;
+    margin: 0;
+}
+
+h1 strong {
+    color: var(--dorado);
+}
+
+h2 {
+    color: var(--celeste);
+    text-transform: uppercase;
+    font-family: var(--font-sansPro);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.header {
+    background-color: var(--bcg-gris);
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header li {
+    height: inherit;
+}
+
+.header a {
+    color: #FFF;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header-imgLogo {
+    height: 65px;
+}
+
+.hero {
+    height: 300px;
+    /* background-image: url("../images/hero.jpg"); */
+    background-color: var(--bcg-gris);
+    /* background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px var(--dorado);
+}
+
+.portfolio {
+    background-color: var(--dorado-suave);
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project strong {
+    font-family: var(--font-fjalla), sans-serif
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;  
+}
+
+.project-url a {
+    text-decoration: none;
+    font-family: var(--font-fjalla);
+    color: coral;
+    padding-left: 5px;
+}
+
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0;
+    
+}
+
+.project-course {
+    font-size: 30px;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 25px;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
+
+.project-image {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    object-fit: cover;
+}
+
+/* article.project:nth-child(2) > figure:nth-child(2) > img:nth-child(1) {
+    object-fit: scale-down;
+} */
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Elementos solos al final */
+.event.event-alone {
+    margin: 0 auto;
+}
+
+.event-list-title {
+    margin-left: 20px;
+}
+
+.event {
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--celeste-suave);
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    /* Evita que la imagen se distorsione */
+    object-fit: cover;
+}
+
+.event-image.css {
+    object-fit: contain;
+}
+
+.event-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    padding: 20px;
+    background-color: #FFF;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.event-description {
+    text-align: center;
+}
+
+.event-url {
+    border: 1px solid var(--celeste);
+    padding: 5px 20px;
+    text-decoration: none;
+    color: var(--celeste);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 6px 9px 0 rgba(0,0,0,0.19);
+}
+
+.footer {
+    background-color: var(--bcg-gris);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer a {
+    color: #FFF;
+}
+
+.footer-imgPlatzi {
+    width: 80px;
+    vertical-align: middle;
+}
+
+.contact {
+    background-color: var(--dorado);
+    color: var(--celeste);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook {
+    background-image: url('../images/facebook.svg');
+}
+
+.social-link.github {
+    background-image: url('../images/github.svg');
+}
+
+.social-link.instagram {
+    background-image: url('../images/instagram.svg');
+}
+
+.social-link.linkedin {
+    background-image: url('../images/linkedin.svg');
+}
+
+.form-email input{
+    border-color: var(--gris-oscuro);
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 12px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    background: transparent;
+    color: var(--celeste);
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100px;
+    margin-bottom: 10px; 
+    font-weight: bold;   
+    letter-spacing: .7px;
+    border: 1px solid rgba(0, 0, 0, 0.685);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.form-email h3 {
+    font-family: var(--font-fjalla);
+    text-shadow: 1px 3px 4px #867947;
+    letter-spacing: .5px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+/* Páginas de certificados */
+
+.cert-header {
+    background-color: var(--bcg-gris);
+    height: auto;
+}
+
+.cert-header-imgLogo {
+    height: 10em;
+    text-align: center;
+}
+
+.cert-container {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: var(--bcg-gris);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cert-image {
+    width: 48%;
+    object-fit: cover;
+}
+
+.cert-contact {
+    background-color: var(--dorado);
+    color: var(--celeste);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .hero-image{
+        margin: 10px 10px;
+        box-shadow: none;
+        object-fit: cover;
+    }
+
+    .event-list-title {
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    /* .container {
+        width: 100%;
+    } */
+
+    .project {
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    .project-description {
+        font-size: 20px;
+    }
+    .project-imageContainer {
+        width: 50%;        
+    }
+    .project-image {
+        display: flex;
+        margin: 0 auto;
+        box-shadow: none;
+        width: 30vw;
+    }
+    .project-details {
+        width: 50%;
+    }
+    .event-list {
+        display: block;
+    }
+    .event {
+        margin: 10px auto;
+    }
+    .form-email {
+        width: 49%;
+    }
+    .form-email h3 {
+        text-align: center;
+    }
+    .form-email button {
+        margin: 5px auto;
+    }
+    .form-email #email {
+        display: block;
+        margin: 0 auto;
+    }
+    .social {
+        width: 49%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .cert-header {
+        height: auto;
+    }
+
+    .cert-container {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+    .cert-image{
+        width: 95%;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+
+    h1 {
+        text-align: center;
+        /* background-image: url(../images/computer.jpg); */
+        background-position: center;
+        background-size: cover;
+        text-shadow: 1px 2px 1px #000;
+        z-index: 2;
+    }
+
+    .cert-header {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    .header a,
+    .header ol {
+        display: block;
+        padding: 1em;
+    }
+    .menu {
+        margin: 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero {
+        /* flex-wrap: wrap; */
+        position: relative;        
+    }
+    .hero-image {
+        /* display: none; */
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .project {
+        display: block;
+    }
+    .project-details,
+    .project-imageContainer {
+        width: 100%;
+    }
+    .project-image {
+        width: 90%;
+    }
+    .event {        
+        width: 96%;
+    }
+
+    .event-image.css {
+        width: 100%;
+    }
+    .contact {
+        display: block;
+        height: 200px;
+    }
+    .cert-contact {
+        display: block;
+        height: auto;
+    }
+    .cert-contact h3 {
+        margin: 0 auto;
+        padding: 1em;
+    }
+    .form-email {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .social {
+        width: auto;
+        text-align: center;
+    }
+    .social.cert-social {
+        padding: 1em;
+    }
+    .footer {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header a {
+        display: block;
+    }
+    .header ol {
+        display: initial;
+    }
+    .cert-header {
+        display: block;
+        height: auto;
+    }
+    .header-imgLogo {
+        margin: 0 auto;
+    }
+    .menu ol li {
+        padding: 1em;
+    }
+    .logo {
+        text-align: center;
+    }
+    .cert-contact {
+        display: block;
+    }
+    
+    .social.cert-social{
+        background-size: 30px auto;
+        padding: 0;
+    }
+    .social-link {
+        width: 35px;
+        height: 35px;
+        background-size: 35px auto;
+    }
+    .footer {
+        font-size: 0.6em;
+    }
+    
+}
