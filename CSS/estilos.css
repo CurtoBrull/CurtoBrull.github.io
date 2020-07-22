@@ -253,7 +253,7 @@ h2 {
 }
 
 .footer-imgPlatzi {
-    width: 80px;
+    width: 5em;
     vertical-align: middle;
 }
 
@@ -294,7 +294,7 @@ h2 {
     background-image: url('../images/linkedin.svg');
 }
 
-.form-email input{
+/* .form-email input{
     border-color: var(--gris-oscuro);
     border-style: solid;
     border-radius: 5px;
@@ -319,12 +319,13 @@ h2 {
     letter-spacing: .7px;
     border: 1px solid rgba(0, 0, 0, 0.685);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+} */
 
-.form-email h3 {
+.contact h3 {
     font-family: var(--font-fjalla);
     text-shadow: 1px 3px 4px #867947;
     letter-spacing: .5px;
+    text-align: center;
 }
 
 .container {
@@ -377,6 +378,7 @@ h2 {
 
     h1 {
         font-size: 2em;
+        padding-left: .5em;
     }
 
     h2 {
@@ -425,7 +427,12 @@ h2 {
     .event {
         margin: 10px auto;
     }
-    .form-email {
+    .contact {
+        display: block;
+        height: auto;
+        padding: 1em 0;
+    }
+    /* .form-email {
         width: 49%;
     }
     .form-email h3 {
@@ -437,16 +444,16 @@ h2 {
     .form-email #email {
         display: block;
         margin: 0 auto;
-    }
+    } */
     .social {
-        width: 49%;
+        text-align: center;
         margin: 0 auto;
     }
 }
 @media screen and (max-width: 767px) {
     h1 {
         padding: .5em;
-    }
+    }   
 
     .cert-header {
         height: auto;
@@ -525,10 +532,11 @@ h2 {
     .event-image.css {
         width: 100%;
     }
-    .contact {
+    /* .contact {
         display: block;
-        height: 200px;
-    }
+        height: auto;
+        padding: 1em 0;
+    } */
     .cert-contact {
         display: block;
         height: auto;
@@ -537,10 +545,10 @@ h2 {
         margin: 0 auto;
         padding: 1em;
     }
-    .form-email {
+    /* .form-email {
         width: 100%;
         margin-bottom: 10px;
-    }
+    } */
     .social {
         width: auto;
         text-align: center;
