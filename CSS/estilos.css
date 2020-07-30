@@ -341,38 +341,60 @@ h2 {
 
 /* Páginas de certificados */
 
+.header.cert-header {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "logo menu";
+}
 .cert-header {
     background-color: var(--bcg-gris);
     height: auto;
+    justify-content: center;
 }
-
+.cert-menu {
+    display: grid;
+    grid-area: menu;
+    justify-items: center;
+}
 .cert-header-imgLogo {
+    grid-area: logo;
     height: 10em;
-    text-align: center;
 }
 
 .cert-container {
-    padding-top: 50px;
-    padding-bottom: 25px;
+    /* padding-top: 50px;
+    padding-bottom: 25px; */
+    padding-bottom: 1em;
     background-color: var(--bcg-gris);
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+    justify-items: center;
+}
+img.cert-image.cert-alone:last-child {
+    width: 40%;
+    grid-column: span 2;
 }
 
 .cert-image {
-    width: 48%;
-    object-fit: cover;
+    width: 80%;
+    object-fit: ;
 }
+
 
 .cert-contact {
     background-color: var(--dorado);
     color: var(--celeste);
-    height: 180px;
-    display: flex;
+    padding: .5em;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
-
+form.form-email h3{
+    padding: 0;
+    margin: .5em;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -454,7 +476,9 @@ h2 {
     h1 {
         padding: .5em;
     }   
-
+    img.cert-image:last-child {
+        width: 95%;
+    }
     .cert-header {
         height: auto;
     }
@@ -479,16 +503,23 @@ h2 {
         text-shadow: 1px 2px 1px #000;
         z-index: 2;
     }
+    .header.cert-header {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "logo"
+                            "menu";
+        justify-content: center;
+    }
     .header {
         display: block;
         height: auto;
         text-align: center;
     }
-    .cert-header {
+    /* .cert-header {
         display: block;
         height: auto;
         text-align: center;
-    }
+    } */
     .header a,
     .header ol {
         display: block;
@@ -554,7 +585,7 @@ h2 {
         text-align: center;
     }
     .social.cert-social {
-        padding: 1em;
+        padding: 0;
     }
     .footer {
         font-size: 0.8em;
@@ -585,20 +616,10 @@ h2 {
         text-align: center;
     }
     .cert-contact {
-        display: block;
-    }
-    
-    .social.cert-social{
-        background-size: 30px auto;
-        padding: 0;
-    }
-    .social-link {
-        width: 35px;
-        height: 35px;
-        background-size: 35px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
     }
     .footer {
         font-size: 0.6em;
     }
-    
 }
