@@ -562,6 +562,9 @@ form.form-email h3{
     .event-image.css {
         width: 100%;
     }
+    img.cert-image.cert-alone:last-child {
+        width: 40%;
+    }
     /* .contact {
         display: block;
         height: auto;
