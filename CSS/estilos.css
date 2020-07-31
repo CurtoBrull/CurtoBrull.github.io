@@ -5,7 +5,7 @@
     --gris-claro: #626262;
     --bcg-gris: #1b2127;
     --celeste: #026fff;
-    --celeste-suave: #f4fbff;
+    --blanco-suave: #f4fbff;
     --gris-blanco: #fafafa;
     --dorado: #fce69a;
     --dorado-suave: #f8eab8;
@@ -59,45 +59,55 @@ h2 {
 }
 
 .header {
-    background-color: var(--bcg-gris);
-    color: #FFF;
-    display: flex;
+    background: #1B2127;
+    background: -webkit-linear-gradient(to top, #1B2127 0%, #F8EAB8 100%);
+    background: -moz-linear-gradient(to top, #1B2127 0%, #F8EAB8 100%);
+    background: linear-gradient(to top, #1B2127 0%, #F8EAB8 100%);  
+    display: grid;
+    grid-template-columns: 5% auto;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
 }
 
 .menu {
     height: inherit;
+    display: grid;
 }
 
 .header ol {
-    display: flex;
+    display: grid;
+    grid-template-columns: 120px 120px 250px;
     height: inherit;
 }
 
 .header li {
-    height: inherit;
+    margin: auto;
 }
 
 .header a {
-    color: #FFF;
+    color: var(--gris-blanco);
+    font-size: 1.2em;
     text-decoration: none;
-    height: inherit;
+    margin: auto .8em;
     display: flex;
     align-items: center;
-    padding: 0 10px;
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    /* text-shadow: 1px 1px 0px #FFFFFF; */
+    box-shadow: 1px 1px 1px var(--gris-claro);
+    border-radius: 10px;
+    /* border: 1px solid var(--gris-claro); */
+    padding: .5em 15px;
+    background: linear-gradient(90deg, white, orange, yellow, rgb(168, 168, 211));
     background-clip: text;
     -webkit-background-clip: text;
 }
 .header a:hover {
     color: transparent;
+    border: none;
+    box-shadow: none;
     transition: 500ms ease;
 }
 
 .header-imgLogo {
-    height: 65px;
+    height: 100px;
 }
 
 .hero {
@@ -115,18 +125,23 @@ h2 {
 .hero-image {
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     box-shadow: 0 0 10px var(--dorado);
 }
 
 .portfolio {
     background-color: var(--dorado-suave);
+    background: #1B2127;
+    background: -webkit-linear-gradient(to bottom, #1B2127 0%, #F8EAB8 100%);
+    background: -moz-linear-gradient(to bottom, #1B2127 0%, #F8EAB8 100%);
+    background: linear-gradient(to bottom, #1B2127 0%, #F8EAB8 100%);
     padding: 20px;
 }
 
 .project {
     border: 1px solid gray;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px 1px rgba(128, 0, 0, 0.5);
     margin-bottom: 15px;
     padding: 20px;
     background-color: #FFF;
@@ -151,7 +166,7 @@ h2 {
     font-family: var(--font-fjalla);
     color: coral;
     padding-left: 5px;
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background: linear-gradient(90deg, red, orange, rgb(151, 151, 17), green, blue, purple);
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -215,7 +230,8 @@ h2 {
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
-    background-color: var(--celeste-suave);
+    background-color: #eeeadc;
+    box-shadow: 3px 3px 3px 1px rgba(128, 0, 0, 0.5);
 }
 
 .event img {
@@ -233,7 +249,8 @@ h2 {
     margin: 20px 40px;
     margin-top: -40px;
     padding: 20px;
-    background-color: #FFF;
+    background-color: rgb(232, 232, 232);
+    box-shadow: 2px 2px 5px 0px rgba(128, 0, 0, 0.6);
     position: relative;
     text-align: center;
     border-radius: 5px;
@@ -244,14 +261,20 @@ h2 {
 }
 
 .event-url {
-    border: 1px solid var(--celeste);
+    background: linear-gradient(90deg, red, orange, green, black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    border: 1px solid var(--gris-claro);
     padding: 5px 20px;
     text-decoration: none;
-    color: var(--celeste);
+    color: #2668b4;
     border-radius: 5px;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 6px 9px 0 rgba(0,0,0,0.19);
 }
-
+.event-url:hover {
+    color: transparent;
+    transition: 500ms ease;
+}
 .footer {
     background-color: var(--bcg-gris);
     color: #FFF;
@@ -263,7 +286,7 @@ h2 {
 
 .footer a {
     color: #FFF;
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background: linear-gradient(90deg, red, orange, yellow, rgb(13, 223, 13), rgb(170, 170, 204), rgb(248, 248, 248));
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -278,8 +301,12 @@ h2 {
 }
 
 .contact {
-    background-color: var(--dorado);
-    color: var(--celeste);
+    background: #F8EAB8;
+    background: -webkit-linear-gradient(to bottom, #F8EAB8 0%, #1B2127 100%);
+    background: -moz-linear-gradient(to bottom, #F8EAB8 0%, #1B2127 100%);
+    background: linear-gradient(to bottom, #F8EAB8 0%, #1B2127 100%);
+    color: var(--gris-blanco);
+    margin-top: 10px;
     height: auto;
     display: flex;
     align-items: center;
@@ -366,6 +393,9 @@ h2 {
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: "logo menu";
 }
+.header.cert-header a {
+    width: 100%;
+}
 .cert-header {
     background-color: var(--bcg-gris);
     height: auto;
@@ -390,6 +420,7 @@ h2 {
     grid-template-columns: repeat(2, 50%);
     gap: 10px;
     justify-items: center;
+    align-items: center;
 }
 img.cert-image.cert-alone:last-child {
     width: 40%;
@@ -402,8 +433,11 @@ img.cert-image.cert-alone:last-child {
 
 
 .cert-contact {
-    background-color: var(--dorado);
-    color: var(--celeste);
+    background: #F8EAB8;
+    background: -webkit-linear-gradient(to top, #F8EAB8 0%, #1B2127 100%);
+    background: -moz-linear-gradient(to top, #F8EAB8 0%, #1B2127 100%);
+    background: linear-gradient(to top, #F8EAB8 0%, #1B2127 100%);
+    color: var(--gris-blanco);
     padding: .5em;
     display: grid;
     align-items: center;
@@ -498,6 +532,12 @@ form.form-email h3{
     img.cert-image:last-child {
         width: 95%;
     }
+    .header a {
+        font-size: 1em;
+    }
+    .header ol {
+        grid-template-columns: 100px 100px 205px;
+    }
     .cert-header {
         height: auto;
     }
@@ -543,6 +583,8 @@ form.form-email h3{
     .header ol {
         display: block;
         padding: 1em;
+        border: none;
+        box-shadow: none;
     }
     .menu {
         margin: 0;
