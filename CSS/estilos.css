@@ -42,6 +42,7 @@ h1 {
     letter-spacing: -.2px;
     color: #FFF;
     margin: 0;
+    text-shadow: 4px 4px 3px rgb(124, 113, 113);
 }
 
 h1 strong {
@@ -91,13 +92,13 @@ h2 {
     display: flex;
     align-items: center;
     /* text-shadow: 1px 1px 0px #FFFFFF; */
-    box-shadow: 1px 1px 1px var(--gris-claro);
     border-radius: 10px;
     /* border: 1px solid var(--gris-claro); */
     padding: .5em 15px;
     background: linear-gradient(90deg, white, orange, yellow, rgb(168, 168, 211));
     background-clip: text;
     -webkit-background-clip: text;
+    box-shadow: 2px 1px 3px 2px black;
 }
 .header a:hover {
     color: transparent;
@@ -126,7 +127,7 @@ h2 {
     object-fit: cover;
     border-radius: 5px;
     /* margin-bottom: 10px; */
-    box-shadow: 0 0 10px var(--dorado);
+    box-shadow: 4px 4px 10px 2px #776D6D;
 }
 
 .portfolio {
