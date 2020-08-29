@@ -11,6 +11,12 @@
     --dorado-suave: #f8eab8;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: var(--font-sansPro), sans-serif;
     margin: 0;
@@ -25,10 +31,10 @@ ul {
 }
 .logo {
     position: fixed;
+    z-index: 100;
 }
 figure {
     margin: 0;
-    position: fixed;
 }
 
 h1,
@@ -262,6 +268,7 @@ h2 {
 
 .event-description {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .event-url {
@@ -564,7 +571,7 @@ form.form-email h3{
         background-position: center;
         background-size: cover;
         text-shadow: 1px 2px 1px #000;
-        z-index: 2;
+        z-index: 3;
     }
     .header.cert-header {
         display: grid;
@@ -605,7 +612,7 @@ form.form-email h3{
         width: 100%;
         margin: 0;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 0;
         bottom: 0;
         left: 0;
@@ -676,12 +683,15 @@ form.form-email h3{
     }
     .header-imgLogo {
         margin: 0 auto;
+        height: 80px;
     }
     .menu ol li {
         padding: 1em;
     }
     .logo {
         text-align: center;
+        z-index: 100;
+
     }
     .cert-contact {
         display: grid;
