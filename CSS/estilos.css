@@ -469,6 +469,13 @@ form.form-email h3{
     margin: .5em;
 }
 
+@media screen and (max-width: 1440px) {
+    .photo {
+        width: 10em;
+        left: 2em;
+        top: 21em;
+    }
+}
 @media screen and (max-width: 1024px) {
 
     h1 {
@@ -544,6 +551,11 @@ form.form-email h3{
         text-align: center;
         margin: 0 auto;
     }
+    .photo {
+        width: 10em;
+        left: 2em;
+        top: 21em;
+    }
 }
 @media screen and (max-width: 767px) {
     h1 {
@@ -570,7 +582,11 @@ form.form-email h3{
     .cert-image{
         width: 95%;
     }
-    
+    .photo {
+        width: 7em;
+        left: 1em;
+        top: 25em;
+    }
 }
 @media screen and (max-width: 480px) {
 
@@ -674,6 +690,11 @@ form.form-email h3{
     .footer {
         font-size: 0.8em;
     }
+    .photo {
+        width: 7em;
+        left: 1em;
+        top: -10em;
+    }
 }
 @media screen and (max-width: 320px) {
     /* .header {
@@ -705,5 +726,10 @@ form.form-email h3{
     }
     .footer {
         font-size: 0.6em;
+    }
+    .photo {
+        width: 5em;
+        left: 1em;
+        top: -12em;
     }
 }
