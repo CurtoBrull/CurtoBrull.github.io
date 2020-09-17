@@ -11,6 +11,8 @@
     --dorado-suave: #f8eab8;
 }
 
+
+
 body {
     font-family: var(--font-sansPro), sans-serif;
     margin: 0;
@@ -26,6 +28,14 @@ ul {
 
 figure {
     margin: 0;
+}
+
+.photo {
+    position: absolute;
+    width: 10em;
+    left: 5em;
+    top: 10em;
+    clip-path: circle(50% at 50% 50%);
 }
 
 h1,
@@ -45,7 +55,8 @@ h1 {
     text-shadow: 4px 4px 3px rgb(124, 113, 113);
 }
 
-h1 strong {
+h1 strong,
+h2 strong {
     color: var(--dorado);
 }
 
@@ -57,6 +68,14 @@ h2 {
     font-size: 2em;
     margin-bottom: 40px;
     text-shadow: 1px 2px 1px #000;
+}
+
+.paragraph {
+    color: white;
+    font-family: var(--font-sansPro);
+    text-shadow: 1px 2px 1px #000;
+    font-size: 1.5em;
+    line-height: 2em;
 }
 
 .header {
